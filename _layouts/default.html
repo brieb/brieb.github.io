@@ -5,43 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Brie Bunge</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div class="wrapper">
       <header>
-        <h1>Brie Bunge</h1>
+        <h1><a href="/">Brie Bunge</a></h1>
+        <img class="me" src="/img/me.jpg"/>
         <p>Objective: Design and develop experiences that bring happiness to people's lives</p>
 
+        
+        <p class="view">
+          <a href="mailto:brie@cs.stanford.edu" target="_blank">brie@cs.stanford.edu &raquo;</a><br/>
+          <a href="/resume/Brie%20Bunge%20-%20Resume.pdf">Resume &raquo;</a> <br/>
+          <a href="http://www.linkedin.com/in/bbunge">LinkedIn &raquo;</a><br/>
+          <a href="https://github.com/brieb">GitHub &raquo;</a> <br/>
+        </p>
 
-        <p class="view"><a href="https://github.com/brieb">View My GitHub Profile</a></p>
+        <!-- <div id="projects"> -->
+        <!--   <h2>Projects</h2> -->
+        <!--   <ul> -->
+        <!--     {% for project in site.categories.projects %} -->
+        <!--     <li> -->
+        <!--     <a href="{{ project.url }}">{{ project.title }}</a> -->
+        <!--     </li> -->
+        <!--     {% endfor %} -->
+        <!--   </ul> -->
+        <!-- </div> -->
 
       </header>
 
       <section>
         {{ content }}
       </section>
-        
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
+
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-33889709-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-33889709-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
   </body>
 </html>

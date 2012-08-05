@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="project">
+  <h1 class="title">{{ page.title }}</h1>
+  <span class="when">
+    {{ page.date | date: "%m/%y" }}
+    {% if page.date-end %} - {{ page.date-end | date: "%m/%y" }}{% endif %}
+  </span>
+  {{ content }}
+</div>
