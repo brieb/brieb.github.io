@@ -2,6 +2,8 @@
 layout: project
 title: Stanford Design Initiative
 category: projects
+date-start: 2011-02-18
+num-images: 15
 ---
 
 *   We foster a design-thinking culture by sharing talents during weekly workshops
@@ -14,20 +16,3 @@ Credit to <a href="http://www.blog.spoongraphics.co.uk/tutorials/illustrator-tut
 
 * [Tutorial Instructions](/img/design-initiative/illustrator-ninja-tutorial.pdf)
 <li><a href="http://designinitiative.posterous.com" target="_blank">Group's Blog</a></li>
-
-
-![](/img/design-initiative/1.png)
-![](/img/design-initiative/2.png)
-![](/img/design-initiative/3.png)
-![](/img/design-initiative/4.png)
-![](/img/design-initiative/5.png)
-![](/img/design-initiative/6.png)
-![](/img/design-initiative/7.png)
-![](/img/design-initiative/8.png)
-![](/img/design-initiative/9.png)
-![](/img/design-initiative/10.png)
-![](/img/design-initiative/11.png)
-![](/img/design-initiative/12.png)
-![](/img/design-initiative/13.png)
-![](/img/design-initiative/14.png)
-![](/img/design-initiative/15.png)

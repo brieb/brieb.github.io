@@ -2,10 +2,16 @@
 layout: project
 title: Stanford HCI Research
 category: projects
+date-start: 2010-06-01
+num-images: 5
 ---
 
 As a team of three, we investigated how prototype critique affects how people
-solve design problems 
+solve design problems
+
+### Mentored by
+
+Scott Klemmer, Steven Dow
 
 ### Conferences & Publications
 
@@ -15,9 +21,3 @@ solve design problems
     Poster), San Jose, CA - 10/10
 *   ACM Conference on Human Factors in Computing Systems (Invited to attend as
     a Freshman), Atlanta, GA - 04/10
-
-![](/img/hci-research/1.png)
-![](/img/hci-research/2.png)
-![](/img/hci-research/3.png)
-![](/img/hci-research/4.png)
-![](/img/hci-research/5.png)

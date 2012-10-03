@@ -1,0 +1,16 @@
+---
+layout: default
+title: Brie Bunge
+---
+
+<div class="projects-featured">
+    {% for project in site.categories.projects %}
+    <a href="{{ project.url }}">
+        <img src="/img{{ project.id }}/featured.png"/>
+
+        <div class="hover-title">
+            {{ project.title }}
+        </div>
+    </a>
+    {% endfor %}
+</div>

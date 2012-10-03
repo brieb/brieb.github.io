@@ -2,6 +2,9 @@
 layout: project
 title: Quiz World
 category: projects
+date-start: 2011-03-01
+num-images: 0
+num-images-custom: 13
 ---
 
 ### What?
@@ -28,19 +31,9 @@ You're all ridiculous. I hope you know that."
 Sophia Westwood, Joe Gasperetti, Brie Bunge
 
 
-![](/img/quiz-world/1.png)
-![](/img/quiz-world/2.png)
-![](/img/quiz-world/3.png)
-![](/img/quiz-world/4.png)
-![](/img/quiz-world/5.png)
-![](/img/quiz-world/6.png)
-![](/img/quiz-world/7.png)
-![](/img/quiz-world/8.png)
-![](/img/quiz-world/9.png)
-![](/img/quiz-world/10.png)
-![](/img/quiz-world/11.png)
-![](/img/quiz-world/12.png)
-![](/img/quiz-world/13.png)
+{% for i in (1..page.num-images-custom) %}
+ ![](/img{{ page.id }}/{{ i }}.png)
+{% endfor %}
 
 
 ### Features implemented: 
