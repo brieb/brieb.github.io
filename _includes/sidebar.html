@@ -27,6 +27,10 @@
         {% endif %}
       {% endfor %}
 
+      <li class="sidebar-nav-item{% if page.title == "Portfolio" %} active{% endif %}">
+        <a href="/portfolio">Projects</a>
+      </li>
+
       <hr/>
 
       <li class="sidebar-nav-item"><a href="{{ site.social.github }}"><i class="fa fa-github-alt"></i> GitHub</a></li>

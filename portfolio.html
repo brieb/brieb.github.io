@@ -1,0 +1,27 @@
+---
+layout: default
+title: Portfolio
+---
+
+<div class="posts portfolio">
+  {% for post in site.categories.portfolio %}
+  <div class="post">
+
+    <h1 class="post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    &nbsp;
+    <span class="post-date">
+      {{ post.date-start | date: "%m/%y" }}
+      {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
+    </span>
+
+    <a href="{{ post.url }}">
+      <img src="/public/assets/{{ post.cid }}/featured.png" />
+    </a>
+  </div>
+
+  <hr/>
+
+  {% endfor %}
+</div>

@@ -1,0 +1,5 @@
+<div class="images">
+  {% for i in (1..include.num-images) %}
+  <img src="/public/assets/{{ include.dir }}/{{ i }}.png"/>
+  {% endfor %}
+</div>
