@@ -82,7 +82,7 @@ MS & BS in CS with a concentration in HCI
 
 ---
 
-# Stanford Course Projects
+<h1 id="proj">Stanford Course Projects</h1>
 
 __PeerServer__ _CS191, Spring 2013_
 
@@ -99,13 +99,13 @@ __[Finna: Get it Done](/cs147-project-finna-fall-2009)__ _CS147, Fall 2009_
 
 ---
 
-# Awards
+<h1 id="awards">Awards</h1>
 
 __PeerServer__ _(June 7, 2013)_ Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innovation"), Hearsay Social, and Twitter across all Stanford CS senior projects at the software fair
 
 ---
 
-# Organizations
+<h1 id="org">Organizations</h1>
 
 __[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__ _Dec 2010 — Mar 2011_
 
@@ -114,7 +114,7 @@ __[Stanford Design Initiative](http://designinitiative.stanford.edu/)__ _Feb 201
 
 ---
 
-# Research
+<h1 id="research">Research</h1>
 
 __Human-Computer Interaction Lab__ _Jan 2010 — Oct 2010_
 
