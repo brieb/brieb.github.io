@@ -1,1 +1,29 @@
-permalink: none
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Brie Bunge
+tagline:          ''
+description:      "Objective: Design and develop experiences that bring happiness to people's lives."
+url:              http://briebunge.com
+
+author:
+  name:           'Brie Bunge'
+  url:            http://briebunge.com
+
+paginate:         5
+excerpt_separator: <!--more-->
+
+social:
+  github: https://github.com/brieb
+  linkedin: http://www.linkedin.com/in/bbunge
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/brieb

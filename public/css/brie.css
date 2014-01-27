@@ -1,0 +1,11 @@
+html {
+  font-family: "PT Serif", Garamond, Georgia, serif;
+}
+
+.avatar {
+  margin-bottom: 0;
+}
+.avatar img {
+  margin: 0;
+  display: inline;
+}
