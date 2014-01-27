@@ -46,7 +46,7 @@ MS & BS in CS with a concentration in HCI
 
 - Web Engineer
 - Designed and developed an internal website to aid the customer support team, a restaurant menu management interface, and the member website. Emphasis on object-oriented JS and maintainable code.
-- _[Read more &raquo;](/clinkle-internship-summer-2012)_ 
+- _[Read more &raquo;](/portfolio/2012/06/25/mobile-payments/)_ 
 
 
 ## [Piazza](https://piazza.com/) _Winter 2012_
@@ -54,7 +54,7 @@ MS & BS in CS with a concentration in HCI
 
 - Engineer
 - Designed and developed the course homepage feature. Learned Amazon S3, Backbone.js, and Twitter Bootstrap to quickly launch the initial version. Iterated based on user feedback and analytics.
-- _[Read more &raquo;](/piazza-internship-winter-2012)_ 
+- _[Read more &raquo;](/portfolio/2012/04/01/piazza/)_ 
 
 
 ## [Facebook](http://www.facebook.com/) _Summer 2011_
@@ -77,7 +77,7 @@ MS & BS in CS with a concentration in HCI
 
 - Consumer Experience Intern
 - Learned CakePHP, jQuery, and visual design while designing a checklist used for communication between team leads and the Consumer Experience Team before launching projects. Learned the Wordpress database structure and a PHP PDF library in three weeks to build a weekly report generator, saving the team hours every week. Built an internal visual HTML DIFF viewer for AOL Mail team.
-- _[Read more &raquo;](/aol-consumer-experience-winter-2011)_ 
+- _[Read more &raquo;](/portfolio/2011/01/01/aol/)_ 
 
 
 ---
@@ -88,28 +88,45 @@ __PeerServer__ _CS191, Spring 2013_
 
 __TamaFITchi__ _CS193p, Winter 2013_
 
-__[Instant Search Engine](/cs110-assignment-instant-search-engine-winter-2011)__ _CS110, Winter 2011_
+__[Quiz World](/portfolio/2011/03/01/quiz-world/)__ _CS108, Winter 2011_
+
+__[Instant Search Engine](/portfolio/2011/03/01/cs110/)__ _CS110, Winter 2011_
 
 __UniVSity__ _CS448B, Fall 2011_ 
 
-__[TrianguLetter](/cs247-project-trianguletter-winter-2010)__ _CS247, Winter 2010_
+__[TrianguLetter](/portfolio/2010/03/01/cs247/)__ _CS247, Winter 2010_
 
-__[Finna: Get it Done](/cs147-project-finna-fall-2009)__ _CS147, Fall 2009_
+__[Finna: Get it Done](/portfolio/2009/10/01/cs147/)__ _CS147, Fall 2009_
 
 
 ---
 
 <h1 id="awards">Awards</h1>
 
-__PeerServer__ _(June 7, 2013)_ Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innovation"), Hearsay Social, and Twitter across all Stanford CS senior projects at the software fair
+- __[Chatternets](https://github.com/ChatterNets/chatternets)__ _(Jan 11, 2014)_  
+First place at the Stanford ACM Hackathon
+
+- __[PeerServer](https://github.com/PeerServer/peer-server)__ _(June 7, 2013)_  
+Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innovation"), Hearsay Social, and Twitter across all Stanford CS senior projects at the software fair
 
 ---
 
 <h1 id="org">Organizations</h1>
 
-__[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__ _Dec 2010 — Mar 2011_
+- __[Freshman Sophomore College at Stanford](http://frosoco.stanford.edu/)__  
+_Nov 2010 - Jul 2012_  
+_[Read more &raquo;](/portfolio/2010/09/01/frosoco/)_ 
 
-__[Stanford Design Initiative](http://designinitiative.stanford.edu/)__ _Feb 2011_ _[Read more &raquo;](/stanford-design-initiative-feb-2011)_ 
+- __[KZSU, Stanford Radio Station](http://kzsu.stanford.edu/)__  
+_Jan 2010 - Sept 2011_  
+_[Read more &raquo;](/portfolio/2011/09/01/kzsu/)_ 
+
+- __[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__  
+_Dec 2010 — Mar 2011_
+
+- __[Stanford Design Initiative](http://designinitiative.stanford.edu/)__  
+_Feb 2011_  
+_[Read more &raquo;](/portfolio/2011/02/18/design-initiative/)_ 
 
 
 ---
@@ -122,4 +139,4 @@ __Human-Computer Interaction Lab__ _Jan 2010 — Oct 2010_
 - As a team of three, we investigated how prototype critique affects how people solve design problems.
 - NPUC - Harnessing the Buzz of the Crowd: Technologies and Applications (Conference Poster), San Francisco, CA - 10/10
 - CrowdConf - Conference on the Future of Distributed Work (Conference Poster), San Jose, CA - 10/10
-- _[Read more &raquo;](/stanford-hci-research-jan-2010-oct-2010)_
+- _[Read more &raquo;](/portfolio/2010/06/01/hci-research/)_
