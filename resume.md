@@ -8,8 +8,8 @@ cid: resume
 <li><a href="#"><i class="fa fa-level-up"></i></a></li>
 <li><a href="#edu">Education</a></li>
 <li><a href="#work">Work Experience</a></li>
-<li><a href="#proj">Course Projects</a></li>
 <li><a href="#awards">Awards</a></li>
+<li><a href="#proj">Course Projects</a></li>
 <li><a href="#org">Organizations</a></li>
 <li><a href="#research">Research</a></li>
 </ul>
@@ -79,26 +79,6 @@ MS & BS in CS with a concentration in HCI
 - Learned CakePHP, jQuery, and visual design while designing a checklist used for communication between team leads and the Consumer Experience Team before launching projects. Learned the Wordpress database structure and a PHP PDF library in three weeks to build a weekly report generator, saving the team hours every week. Built an internal visual HTML DIFF viewer for AOL Mail team.
 - _[Read more &raquo;](/portfolio/2011/01/01/aol/)_ 
 
-
----
-
-<h1 id="proj">Stanford Course Projects</h1>
-
-__PeerServer__ _CS191, Spring 2013_
-
-__TamaFITchi__ _CS193p, Winter 2013_
-
-__[Quiz World](/portfolio/2011/03/01/quiz-world/)__ _CS108, Winter 2011_
-
-__[Instant Search Engine](/portfolio/2011/03/01/cs110/)__ _CS110, Winter 2011_
-
-__UniVSity__ _CS448B, Fall 2011_ 
-
-__[TrianguLetter](/portfolio/2010/03/01/cs247/)__ _CS247, Winter 2010_
-
-__[Finna: Get it Done](/portfolio/2009/10/01/cs147/)__ _CS147, Fall 2009_
-
-
 ---
 
 <h1 id="awards">Awards</h1>
@@ -108,6 +88,24 @@ First place at the Stanford ACM Hackathon
 
 - __[PeerServer](https://github.com/PeerServer/peer-server)__ _(June 7, 2013)_  
 Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innovation"), Hearsay Social, and Twitter across all Stanford CS senior projects at the software fair
+
+---
+
+<h1 id="proj">Stanford Course Projects</h1>
+
+- __[PeerServer](https://github.com/PeerServer/peer-server)__ _CS191, Spring 2013_
+
+- __TamaFITchi__ _CS193p, Winter 2013_
+
+- __[Quiz World](/portfolio/2011/03/01/quiz-world/)__ _CS108, Winter 2011_
+
+- __[Instant Search Engine](/portfolio/2011/03/01/cs110/)__ _CS110, Winter 2011_
+
+- __UniVSity__ _CS448B, Fall 2011_ 
+
+- __[TrianguLetter](/portfolio/2010/03/01/cs247/)__ _CS247, Winter 2010_
+
+- __[Finna: Get it Done](/portfolio/2009/10/01/cs147/)__ _CS147, Fall 2009_
 
 ---
 
