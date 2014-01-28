@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
-
 .avatar {
   margin-bottom: 0;
 }
@@ -21,6 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .post img {
   max-width: 100%;
+  float: left;
+  margin-right: 20px;
 }
 
 .portfolio .post-title,
