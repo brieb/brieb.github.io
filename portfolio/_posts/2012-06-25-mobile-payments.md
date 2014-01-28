@@ -1,6 +1,6 @@
 ---
 layout: portfolio-item
-title: Mobile Payments Startup
+title: Clinkle Internship, Summer 2012
 date-start: 2012-06-25
 date-end: 2012-09-14
 num-images: 0
