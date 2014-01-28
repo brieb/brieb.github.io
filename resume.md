@@ -37,7 +37,7 @@ MS & BS in CS with a concentration in HCI
 
 - Software engineer
 - Built foundation for Twitter-inspired social network within KA. Owned the project and finished the core of the feature as a team of one. Full-stack development (Google App Engine, Flask, Backbone, React, LESS).
-- _[Read more &raquo;](/khan-academy-internship-summer-2013)_ 
+- _[Read more &raquo;](/blog/2014/01/07/khan-academy-internship/)_ 
 
 
 ## [Clinkle](https://www.clinkle.com/) _Summer 2012_
