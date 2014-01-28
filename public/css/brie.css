@@ -22,8 +22,10 @@ hr {
   display: inline;
 }
 
-.posts .post img {
+.post img {
   max-width: 100%;
+}
+.posts .post img {
   float: left;
   margin-right: 20px;
 }

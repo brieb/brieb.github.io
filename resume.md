@@ -117,7 +117,7 @@ _[Read more &raquo;](/portfolio/2010/09/01/frosoco/)_
 
 - __[KZSU, Stanford Radio Station](http://kzsu.stanford.edu/)__  
 _Jan 2010 - Sept 2011_  
-_[Read more &raquo;](/portfolio/2011/09/01/kzsu/)_ 
+_[Read more &raquo;](/portfolio/2010/01/01/kzsu/)_ 
 
 - __[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__  
 _Dec 2010 — Mar 2011_
