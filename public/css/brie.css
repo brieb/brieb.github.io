@@ -145,6 +145,15 @@ ul {
   }
 }
 
+.citation {
+  font-size: 11px;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.citation a {
+  color: inherit;
+}
+
 /*** <PORTFOLIO> ***/
 
 .portfolio .post-title,
