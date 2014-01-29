@@ -4,9 +4,6 @@ url: http://briebunge.com
 author:
   name: 'Brie Bunge'
   email: ''
-social:
-  github: https://github.com/brieb
-  linkedin: http://www.linkedin.com/in/bbunge
 markdown: rdiscount
 permalink: pretty
 pygments: true
