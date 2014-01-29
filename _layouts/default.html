@@ -5,7 +5,42 @@
 
   <body class="theme-base-0d">
 
-    {% include sidebar.html %}
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1>{{ site.title }}</h1>
+        <p class="avatar"><img src="/public/img/avatar.png"></p>
+        <p class="lead">{{ site.description }}</p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li class="{% if page.title == "Home" %}active{% endif %}">
+              <a href="/">Home</a>
+            </li>
+
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+              {% if node.title != null %}
+                {% if node.layout == "page" %}
+                  <li class="{% if page.url == node.url %}active{% endif %}">
+                    <a href="{{ node.url }}">{{ node.title }}</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            <li class="{% if page.title == "Portfolio" %}active{% endif %}">
+              <a href="/portfolio">Projects</a>
+            </li>
+
+            <hr/>
+
+            <li><a href="{{ site.social.github }}"><i class="fa fa-github-alt"></i> GitHub</a></li>
+            <li><a href="{{ site.social.linkedin }}"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <div class="content container">
       {{ content }}

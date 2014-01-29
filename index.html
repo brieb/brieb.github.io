@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Home
 ---
 
 <div class="posts">
@@ -52,24 +51,26 @@ title: Home
       {{ post.excerpt }}
       <a href="{{ post.url }}">Read full post &raquo;</a>
     {% endif %}
-
+    
   </div>
+  <hr/>
   {% endfor %}
 </div>
 
+<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="next">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
+      <a href="/" class="newer">Newer</a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="previous">Newer</span>
   {% endif %}
 </div>

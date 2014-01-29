@@ -1,20 +1,14 @@
-# Dependencies
-markdown: redcarpet
-pygments: true
-
 title: Brie Bunge
 description: "Objective: Design and develop experiences that bring happiness to people's lives."
 url: http://briebunge.com
-
 author:
   name: 'Brie Bunge'
-  url: http://briebunge.com
-
-paginate: 5
-excerpt_separator: <!--more-->
-permalink: pretty
-
+  email: ''
 social:
   github: https://github.com/brieb
   linkedin: http://www.linkedin.com/in/bbunge
+markdown: rdiscount
+permalink: pretty
+pygments: true
+paginate: 5
 

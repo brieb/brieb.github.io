@@ -1,17 +1,30 @@
-html {
+body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-.sidebar-about h1 {
-  /* font-family: "Bitter", serif; */
+.masthead h1 {
   font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: 800;
 }
 
 hr {
   clear: both;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.masthead {
+  text-align: center;
+}
+
+.pagination {
+  border: 1px solid #EEE;
 }
 
 .avatar {
@@ -26,44 +39,64 @@ hr {
   max-width: 100%;
 }
 .posts .post img {
-  float: left;
-  margin-right: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
 }
+@media (min-width: 500px) {
+  .posts .post img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+/*** PORTFOLIO ***/
 
 .portfolio .post-title,
 .portfolio .post-date {
   display: inline-block;
 }
 
+/*** RESUME ***/
+
 .resume.page img {
-  float: right;
-  margin-left: 40px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.resume.page ul {
-  list-style-type: square;
+@media (min-width: 500px) {
+  .resume.page img {
+    display: inline-block;
+    float: right;
+    margin-left: 40px;
+  }
 }
+
 .resume.page h2 {
   clear: both;
-  font-size: 1.3rem;
-  padding-top: 1.5rem;
+  font-size: 20px;
+  padding-top: 40px;
 }
 .resume.page h2 em {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 200;
 }
 
 .resume.page .menu {
-  margin-left: -160px;
+  margin-left: -140px;
   display: none;
   position: fixed;
-  top: 0;
+  top: 40px;
   list-style-type: none;
   padding: 0;
   z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .resume.page .menu li {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 12px;
   background-color: #d28445;
   opacity: 0.8;
   width: 100px;
@@ -72,15 +105,15 @@ hr {
   opacity: 1;
 }
 .resume.page .menu a {
-  padding: 0.25rem;
+  padding: 5px 2px;
   display: block;
   color: #FFF;
 }
-@media (min-width: 48rem) {
+@media (min-width: 990px) {
   .resume.page .menu {
     display: block;
   }
   .resume.page {
-    padding-left: 160px;
+    padding-left: 140px;
   }
 }
