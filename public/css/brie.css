@@ -16,6 +16,48 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
+
+/*** <IPAD HEIGHT FIX> ***/
+.masthead-inner {
+  padding: 10px 15px;
+}
+.colophon {
+  margin-top: 20px;
+}
+.lead {
+  font-size: 16px;
+}
+.avatar img {
+  height: 150px;
+}
+.masthead h1 {
+  font-size: 40px;
+}
+.masthead hr {
+margin: 20px 0;
+}
+@media (min-height: 900px) {
+  .masthead-inner {
+    padding: 40px;
+  }
+  .colophon {
+    margin-top: 40px;
+  }
+  .lead {
+    font-size: 24px;
+  }
+  .avatar img {
+    height: auto;
+  }
+  .masthead h1 {
+    font-size: 64px;
+  }
+  .masthead hr {
+    margin: 40px 0;
+  }
+}
+/*** </IPAD HEIGHT FIX> ***/
+
 hr {
   clear: both;
 }
