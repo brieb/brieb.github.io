@@ -18,7 +18,7 @@ layout: default
       </span>
 
       <img src="/public/assets/{{ post.cid }}/featured.png" />
-      <a href="{{ post.url }}">View project &raquo;</a>
+      <a class="read-more" href="{{ post.url }}">View project &raquo;</a>
     {% elsif post.link %}
       <h1 class="post-title">
         <a href="{{ post.link }}">{{ post.title }}</a>
@@ -49,7 +49,7 @@ layout: default
       {% endif %}
 
       {{ post.excerpt }}
-      <a href="{{ post.url }}">Read full post &raquo;</a>
+      <a class="read-more" href="{{ post.url }}">Read full post &raquo;</a>
     {% endif %}
     
   </div>

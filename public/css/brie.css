@@ -47,7 +47,7 @@ margin: 20px 0;
     font-size: 16px;
   }
   .masthead h1 {
-    font-size: 46px;
+    font-size: 50px;
   }
   .masthead hr {
     margin: 40px 0;
@@ -55,9 +55,9 @@ margin: 20px 0;
 }
 /*** </IPAD HEIGHT FIX> ***/
 
-hr {
-  clear: both;
-}
+hr { clear: both; }
+
+p { line-height: 1.5; }
 
 ul {
   padding-left: 20px;
@@ -66,6 +66,11 @@ ul {
 
 .masthead {
   text-align: center;
+}
+
+.masthead .lead {
+  max-width: 240px;
+  margin: auto;
 }
 
 .pagination {
@@ -81,8 +86,51 @@ ul {
   display: inline;
 }
 
+.read-more {
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 600px) {
+  .content > .post {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+}
+.post p {
+  text-align: justify;
+}
+
+@media (min-width: 990px) {
+  .container {
+    width: 68%;
+    margin-left: 26%;
+    margin-right: 6%;
+  }
+  .masthead {
+    width: 20%;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 60%;
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 2000px) {
+  .container {
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 15%;
+  }
+}
+
 .post img {
   max-width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .posts .post img {
   display: block;
@@ -130,7 +178,6 @@ ul {
 }
 
 .resume.page .menu {
-  margin-left: -140px;
   display: none;
   position: fixed;
   top: 40px;
@@ -142,24 +189,38 @@ ul {
 }
 .resume.page .menu li {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #d28445;
   opacity: 0.8;
   width: 100px;
+  border-top: 1px solid #B46D33;
 }
-.resume.page .menu li:hover {
-  opacity: 1;
-}
+.resume.page .menu li:first-child { border-top: none; }
+.resume.page .menu li:hover { opacity: 1; }
+
 .resume.page .menu a {
-  padding: 5px 2px;
+  padding: 8px 5px;
   display: block;
+  font-weight: 300;
   color: #FFF;
 }
 @media (min-width: 990px) {
   .resume.page .menu {
     display: block;
+    margin-left: -150px;
   }
   .resume.page {
     padding-left: 140px;
   }
 }
+/* @media (min-width: 1440px) { */
+/*   .resume.page .menu { */
+/*     margin-left: -200px; */
+/*   } */
+/*   .resume.page { */
+/*     padding-left: 140px; */
+/*   } */
+/*   .resume.page .menu li { */
+/*     width: 130px; */
+/*   } */
+/* } */
