@@ -38,19 +38,16 @@ margin: 20px 0;
 }
 @media (min-height: 900px) {
   .masthead-inner {
-    padding: 40px;
+    padding: 20px;
   }
   .colophon {
     margin-top: 40px;
   }
   .lead {
-    font-size: 24px;
-  }
-  .avatar img {
-    height: auto;
+    font-size: 16px;
   }
   .masthead h1 {
-    font-size: 64px;
+    font-size: 46px;
   }
   .masthead hr {
     margin: 40px 0;
