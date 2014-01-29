@@ -33,7 +33,7 @@ Sophia Westwood, Joe Gasperetti, Brie Bunge
 
 
 {% for i in (1..page.num-images-custom) %}
- ![](/img{{ page.id }}/{{ i }}.png)
+ ![](/public/assets/{{ page.cid }}/{{ i }}.png)
 {% endfor %}
 
 
