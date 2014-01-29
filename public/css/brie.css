@@ -91,15 +91,16 @@ ul {
   clear: both;
 }
 
+.post p {
+  text-align: justify;
+}
+
 @media (min-width: 600px) {
   .content > .post {
     width: 80%;
     margin: auto;
     margin-bottom: 80px;
   }
-}
-.post p {
-  text-align: justify;
 }
 
 @media (min-width: 990px) {
@@ -144,14 +145,16 @@ ul {
   }
 }
 
-/*** PORTFOLIO ***/
+/*** <PORTFOLIO> ***/
 
 .portfolio .post-title,
 .portfolio .post-date {
   display: inline-block;
 }
 
-/*** RESUME ***/
+/*** </PORTFOLIO> ***/
+
+/*** <RESUME> ***/
 
 .resume.page img {
   display: block;
@@ -213,14 +216,6 @@ ul {
     padding-left: 140px;
   }
 }
-/* @media (min-width: 1440px) { */
-/*   .resume.page .menu { */
-/*     margin-left: -200px; */
-/*   } */
-/*   .resume.page { */
-/*     padding-left: 140px; */
-/*   } */
-/*   .resume.page .menu li { */
-/*     width: 130px; */
-/*   } */
-/* } */
+
+/*** </RESUME> ***/
+
