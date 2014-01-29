@@ -3,7 +3,15 @@ layout: default
 ---
 
 <div class="post">
+  {% if page.link %}
+  <h1 class="post-title">
+    <a href="{{ page.link }}">{{ page.title }}</a>
+    &nbsp;<i class="fa fa-external-link"></i>
+  </h1>
+  {% else %}
   <h1 class="post-title">{{ page.title }}</h1>
+  {% endif %}
+
   <span class="post-date"><i class="fa fa-calendar-o"></i> {{ page.date | date_to_string }}</span>
 
   {% if page.featured-image %}
@@ -38,10 +46,25 @@ var disqus_shortname = 'briebunge'; // required: replace example with your forum
     {% for post in site.related_posts limit:3 %}
       <li>
         <h3>
+          {% if post.categories contains 'portfolio' %}
           <a href="{{ post.url }}">
-            {{ post.title }}
+            <small><i class="fa fa-th-large"></i>&nbsp;</small>
+            {{ post.title }}&nbsp;
             <small>{{ post.date | date_to_string }}</small>
           </a>
+          {% elsif post.link %}
+          <a href="{{ post.link }}">
+            <small><i class="fa fa-external-link"></i>&nbsp;</small>
+            {{ post.title }}&nbsp;
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+          {% else %}
+          <a href="{{ post.url }}">
+            <small><i class="fa fa-comments-o"></i>&nbsp;</small>
+            {{ post.title }}&nbsp;
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+          {% endif %}
         </h3>
       </li>
     {% endfor %}
