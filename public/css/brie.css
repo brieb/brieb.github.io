@@ -10,6 +10,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: 800;
 }
 
+@media (min-width: 990px) {
+  .masthead-inner {
+    top: 0;
+  }
+}
+
 hr {
   clear: both;
 }
