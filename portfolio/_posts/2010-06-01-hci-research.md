@@ -2,7 +2,6 @@
 cid: hci-research
 layout: portfolio-item
 title: Stanford HCI Research
-category: projects
 date-start: 2010-06-01
 num-images: 5
 ---

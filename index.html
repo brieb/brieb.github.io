@@ -2,86 +2,80 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
+<div class="home-page">
 
-    {% if post.categories contains 'portfolio' %}
-      <h1 class="post-title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
-      <span class="post-date">
-        <i class="fa fa-th-large"></i>
-        {{ post.date-start | date: "%m/%y" }}
-        {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
-      </span>
-
-      <img src="/public/assets/{{ post.cid }}/featured.png" />
-      <a class="read-more" href="{{ post.url }}">View project &raquo;</a>
-    {% elsif post.link %}
-      <h1 class="post-title">
-        <a href="{{ post.link }}">{{ post.title }}</a>
-      </h1>
-
-      <span class="post-date">
-        <i class="fa fa-external-link"></i>
-        {{ post.date | date_to_string }}
-      </span>
-
-      {% if post.featured-image %}
-      <img src="/public/assets/featured-image/{{ post.featured-image }}" />
-      {% endif %}
-
-      {{ post.excerpt }}
-    {% else %}
-      <h1 class="post-title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
-      <span class="post-date">
-        <i class="fa fa-comments-o"></i>
-        {{ post.date | date_to_string }}
-      </span>
-
-      {% if post.featured-image %}
-      <img src="/public/assets/featured-image/{{ post.featured-image }}" />
-      {% endif %}
-
-      {{ post.excerpt }}
-      <a class="read-more" href="{{ post.url }}">Read full post &raquo;</a>
-    {% endif %}
-    
+  <div class="cover">
+    <div class="overlay"></div>
+    <div class="background"></div>
+    <div class="content">
+      <div class="header">Brie Bunge</div>
+      <div class="avatar"><img src="/public/img/avatar.png"></div>
+      <div class="subheader">
+        Objective: Design and develop experiences that bring happiness
+        to people's lives
+      </div>
+    </div>
   </div>
-  <hr/>
-  {% endfor %}
-</div>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">
-        <i class="fa fa-angle-left"></i>&nbsp; Newer
+  <div class="container">
+    <div class="links">
+      <a class="link" href="/blog">
+        <i class="fa fa-pencil"></i>
+        <h1>Blog</h1>
       </a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">
-        <i class="fa fa-angle-left"></i>&nbsp; Newer
-      </a>
-    {% endif %}
-  {% else %}
-    <span class="previous">
-        <i class="fa fa-angle-left"></i>&nbsp; Newer
-    </span>
-  {% endif %}
 
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">
-      Older &nbsp;<i class="fa fa-angle-right"></i>
-    </a>
-  {% else %}
-    <span class="next">
-      Older &nbsp;<i class="fa fa-angle-right"></i>
-    </span>
-  {% endif %}
+      <a class="link" href="/portfolio">
+        <i class="portfolio fa fa-th-large"></i>
+        <h1>Portfolio</h1>
+      </a>
+
+      <a class="link" href="/resume">
+        <i class="fa fa-road"></i>
+        <h1>Resume</h1>
+      </a>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div class="container">
+      <div class="recent blog">
+        <h2 class="subheader">&mdash; Recent Posts &mdash;</h2>
+        {% assign cnt = '' %}
+        {% for post in site.posts %}
+          {% if post.title != null %}
+            {% if post.categories contains 'portfolio' %}{% else %}
+              <a href="{{ post.url }}" class="item" {% if post.featured-image %}style="background-image: url(/public/assets/featured-image/{{ post.featured-image }});"{% endif %}>
+                <h3 class="post-title">{{ post.title }}</h3>
+              </a>
+
+              {% capture cnt %}{{ cnt }}*{% endcapture %}
+              {% if cnt.size >= 5 %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="recent portfolio">
+        <h2 class="subheader">&mdash; Recent Projects &mdash;</h2>
+        {% assign cnt = '' %}
+        {% for post in site.posts %}
+            {% if post.title != null %}
+              {% if post.categories contains 'portfolio' %}
+                <a href="{{ post.url }}" class="item" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);">
+                  <h3 class="post-title">{{ post.title }}</h3>
+                </a>
+
+                {% capture cnt %}{{ cnt }}*{% endcapture %}
+                {% if cnt.size >= 5 %}
+                  {% break %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
 </div>

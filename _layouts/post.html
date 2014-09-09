@@ -2,71 +2,77 @@
 layout: default
 ---
 
-<div class="post">
-  {% if page.link %}
-  <h1 class="post-title">
-    <a href="{{ page.link }}">{{ page.title }}</a>
-    &nbsp;<i class="fa fa-external-link"></i>
-  </h1>
-  {% else %}
-  <h1 class="post-title">{{ page.title }}</h1>
-  {% endif %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="post blog-post">
+        {% if page.link %}
+        <h1 class="post-title">
+          <a href="{{ page.link }}">{{ page.title }}</a>
+          &nbsp;<i class="fa fa-external-link"></i>
+        </h1>
+        {% else %}
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% endif %}
 
-  <span class="post-date"><i class="fa fa-calendar-o"></i> {{ page.date | date_to_string }}</span>
+        <span class="post-date"><i class="fa fa-calendar-o"></i> {{ page.date | date_to_string }}</span>
 
-  {% if page.featured-image %}
-  <img class="featured-image" src="/public/assets/featured-image/{{ page.featured-image }}">
-  {% endif %}
+        {% if page.featured-image %}
+        <img class="featured-image" src="/public/assets/featured-image/{{ page.featured-image }}">
+        {% endif %}
 
-  <div class="post-content">
-    {{ content }}
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+
+      {% if page.comments %}
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'briebunge'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+       })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      {% endif %}
+
+      <div class="related">
+        <h2>Related Posts</h2>
+        <ul class="related-posts">
+          {% for post in site.related_posts limit:3 %}
+            <li>
+              <h3>
+                {% if post.categories contains 'portfolio' %}
+                <a href="{{ post.url }}">
+                  <small><i class="fa fa-th-large"></i>&nbsp;</small>
+                  {{ post.title }}&nbsp;
+                  <small>{{ post.date | date_to_string }}</small>
+                </a>
+                {% elsif post.link %}
+                <a href="{{ post.link }}">
+                  <small><i class="fa fa-external-link"></i>&nbsp;</small>
+                  {{ post.title }}&nbsp;
+                  <small>{{ post.date | date_to_string }}</small>
+                </a>
+                {% else %}
+                <a href="{{ post.url }}">
+                  <small><i class="fa fa-comments-o"></i>&nbsp;</small>
+                  {{ post.title }}&nbsp;
+                  <small>{{ post.date | date_to_string }}</small>
+                </a>
+                {% endif %}
+              </h3>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'briebunge'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() {
- var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
- dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
- (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
- })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-{% endif %}
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          {% if post.categories contains 'portfolio' %}
-          <a href="{{ post.url }}">
-            <small><i class="fa fa-th-large"></i>&nbsp;</small>
-            {{ post.title }}&nbsp;
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-          {% elsif post.link %}
-          <a href="{{ post.link }}">
-            <small><i class="fa fa-external-link"></i>&nbsp;</small>
-            {{ post.title }}&nbsp;
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-          {% else %}
-          <a href="{{ post.url }}">
-            <small><i class="fa fa-comments-o"></i>&nbsp;</small>
-            {{ post.title }}&nbsp;
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-          {% endif %}
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
 </div>

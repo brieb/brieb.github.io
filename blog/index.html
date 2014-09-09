@@ -1,0 +1,102 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog">
+  <div class="container">
+
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'portfolio' %}
+      <div class="post">
+        <div class="icon"><i class="fa fa-th-large"></i></div>
+
+        <h1 class="post-title">
+          <a href="{{ post.link }}">{{ post.title }}</a>
+        </h1>
+
+        <span class="post-date">
+          {{ post.date-start | date: "%m/%y" }}
+          {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
+        </span>
+
+
+        <a href="{{ post.url }}">
+          <img src="/public/assets/{{ post.cid }}/featured.png" />
+        </a>
+
+        <div class="clearfix"></div>
+      </div>
+      {% elsif post.link %}
+      <div class="post">
+        <div class="icon"><i class="fa fa-external-link"></i></div>
+
+        <h1 class="post-title">
+          <a href="{{ post.link }}">{{ post.title }}</a>
+        </h1>
+
+        <span class="post-date">
+          {{ post.date | date_to_string }}
+        </span>
+
+        {% if post.featured-image %}
+        <img src="/public/assets/featured-image/{{ post.featured-image }}" />
+        {% endif %}
+
+        {{ post.excerpt }}
+        <div class="clearfix"></div>
+      </div>
+      {% else %}
+      <div class="post">
+        <div class="icon"><i class="fa fa-pencil"></i></div>
+
+        <h1 class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h1>
+
+        <span class="post-date">
+          {{ post.date | date_to_string }}
+        </span>
+
+        {% if post.featured-image %}
+        <img src="/public/assets/featured-image/{{ post.featured-image }}" />
+        {% endif %}
+
+        {{ post.excerpt }}
+        <div class="clearfix"></div>
+        <a class="read-more" href="{{ post.url }}">Read full post &raquo;</a>
+      </div>
+      {% endif %}
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+          <a href="/blog/" class="newer">
+            <i class="fa fa-angle-left"></i>&nbsp; Newer
+          </a>
+        {% else %}
+          <a href="/blog/page{{paginator.previous_page}}" class="newer">
+            <i class="fa fa-angle-left"></i>&nbsp; Newer
+          </a>
+        {% endif %}
+      {% else %}
+        <span class="newer">
+            <i class="fa fa-angle-left"></i>&nbsp; Newer
+        </span>
+      {% endif %}
+
+      {% if paginator.next_page %}
+        <a href="/blog/page{{paginator.next_page}}" class="older">
+          Older &nbsp;<i class="fa fa-angle-right"></i>
+        </a>
+      {% else %}
+        <span class="older">
+          Older &nbsp;<i class="fa fa-angle-right"></i>
+        </span>
+      {% endif %}
+    </div>
+
+  </div>
+</div>

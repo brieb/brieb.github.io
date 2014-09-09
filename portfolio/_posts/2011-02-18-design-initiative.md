@@ -2,7 +2,6 @@
 cid: design-initiative
 layout: portfolio-item
 title: Stanford Design Initiative
-category: projects
 date-start: 2011-02-18
 num-images: 15
 ---
@@ -11,7 +10,7 @@ num-images: 15
 *   Led a workshop on Adobe Illustrator for thirteen students - we made ninjas!
 *   Run our weekly meetings, act as the face and voice of the Design Initiative, and seek new opportunities to grow our campus presence
 
-Credit to <a href="http://www.blog.spoongraphics.co.uk/tutorials/illustrator-tutorial-create-a-gang-of-vector-ninjas" target="_blank">Chris Spooner</a> for the tutorial inspiration. 
+Credit to <a href="http://www.blog.spoongraphics.co.uk/tutorials/illustrator-tutorial-create-a-gang-of-vector-ninjas" target="_blank">Chris Spooner</a> for the tutorial inspiration.
 
 ### Links
 

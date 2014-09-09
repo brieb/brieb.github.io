@@ -4,7 +4,7 @@ title: Résumé
 cid: resume
 ---
 
-<ul class="menu">
+<!-- <ul class="menu">
 <li><a href="#"><i class="fa fa-level-up"></i></a></li>
 <li><a href="#edu">Education</a></li>
 <li><a href="#work">Work Experience</a></li>
@@ -12,7 +12,7 @@ cid: resume
 <li><a href="#proj">Course Projects</a></li>
 <li><a href="#org">Organizations</a></li>
 <li><a href="#research">Research</a></li>
-</ul>
+</ul> -->
 
 _[<i class="fa fa-file-o"></i> View PDF version](/public/assets/resume/Brie%20Bunge%20-%20Resume.pdf)_
 
@@ -21,7 +21,7 @@ _[<i class="fa fa-file-o"></i> View PDF version](/public/assets/resume/Brie%20Bu
 __Stanford University__ _2009-2014_
 ![stanford](/public/assets/resume/stanford.png)
 
-MS & BS in CS with a concentration in HCI 
+MS & BS in CS with a concentration in HCI
 
 - Coursework topics include: Interaction Design, Web Applications, Data Visualization, Databases, Computer Systems, Computer Graphics, Machine Learning
 - Course assistant: iPhone and iPad Application Programming, Principles of Computer Systems
@@ -37,7 +37,7 @@ MS & BS in CS with a concentration in HCI
 
 - Software engineer
 - Built foundation for Twitter-inspired social network within KA. Owned the project and finished the core of the feature as a team of one. Full-stack development (Google App Engine, Flask, Backbone, React, LESS).
-- _[Read more &raquo;](/blog/2014/01/07/khan-academy-internship/)_ 
+- _[Read more &raquo;](/blog/2014/01/07/khan-academy-internship/)_
 
 
 ## [Clinkle](https://www.clinkle.com/) _Summer 2012_
@@ -46,7 +46,7 @@ MS & BS in CS with a concentration in HCI
 
 - Web Engineer
 - Designed and developed an internal website to aid the customer support team, a restaurant menu management interface, and the member website. Emphasis on object-oriented JS and maintainable code.
-- _[Read more &raquo;](/portfolio/2012/06/25/mobile-payments/)_ 
+- _[Read more &raquo;](/portfolio/2012/06/25/mobile-payments/)_
 
 
 ## [Piazza](https://piazza.com/) _Winter 2012_
@@ -54,7 +54,7 @@ MS & BS in CS with a concentration in HCI
 
 - Engineer
 - Designed and developed the course homepage feature. Learned Amazon S3, Backbone.js, and Twitter Bootstrap to quickly launch the initial version. Iterated based on user feedback and analytics.
-- _[Read more &raquo;](/portfolio/2012/04/01/piazza/)_ 
+- _[Read more &raquo;](/portfolio/2012/04/01/piazza/)_
 
 
 ## [Facebook](http://www.facebook.com/) _Summer 2011_
@@ -77,16 +77,16 @@ MS & BS in CS with a concentration in HCI
 
 - Consumer Experience Intern
 - Learned CakePHP, jQuery, and visual design while designing a checklist used for communication between team leads and the Consumer Experience Team before launching projects. Learned the Wordpress database structure and a PHP PDF library in three weeks to build a weekly report generator, saving the team hours every week. Built an internal visual HTML DIFF viewer for AOL Mail team.
-- _[Read more &raquo;](/portfolio/2011/01/01/aol/)_ 
+- _[Read more &raquo;](/portfolio/2011/01/01/aol/)_
 
 ---
 
 <h1 id="awards">Awards</h1>
 
-- __[Chatternets](https://github.com/ChatterNets/chatternets)__ _(Jan 11, 2014)_  
+- __[Chatternets](https://github.com/ChatterNets/chatternets)__ _(Jan 11, 2014)_
 First place at the Stanford ACM Hackathon
 
-- __[PeerServer](https://github.com/PeerServer/peer-server)__ _(June 7, 2013)_  
+- __[PeerServer](https://github.com/PeerServer/peer-server)__ _(June 7, 2013)_
 Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innovation"), Hearsay Social, and Twitter across all Stanford CS senior projects at the software fair
 
 ---
@@ -101,7 +101,7 @@ Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innov
 
 - __[Instant Search Engine](/portfolio/2011/03/01/cs110/)__ _CS110, Winter 2011_
 
-- __UniVSity__ _CS448B, Fall 2011_ 
+- __UniVSity__ _CS448B, Fall 2011_
 
 - __[TrianguLetter](/portfolio/2010/03/01/cs247/)__ _CS247, Winter 2010_
 
@@ -111,20 +111,20 @@ Top project awards from Palantir, VMWare ("VMware Award for Best Technical Innov
 
 <h1 id="org">Organizations</h1>
 
-- __[Freshman Sophomore College at Stanford](http://frosoco.stanford.edu/)__  
-_Nov 2010 - Jul 2012_  
-_[Read more &raquo;](/portfolio/2010/09/01/frosoco/)_ 
+- __[Freshman Sophomore College at Stanford](http://frosoco.stanford.edu/)__
+_Nov 2010 - Jul 2012_
+_[Read more &raquo;](/portfolio/2010/09/01/frosoco/)_
 
-- __[KZSU, Stanford Radio Station](http://kzsu.stanford.edu/)__  
-_Jan 2010 - Sept 2011_  
-_[Read more &raquo;](/portfolio/2010/01/01/kzsu/)_ 
+- __[KZSU, Stanford Radio Station](http://kzsu.stanford.edu/)__
+_Jan 2010 - Sept 2011_
+_[Read more &raquo;](/portfolio/2010/01/01/kzsu/)_
 
-- __[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__  
+- __[Association for Computing Machinery, Stanford Chapter](http://stanfordacm.com/)__
 _Dec 2010 — Mar 2011_
 
-- __[Stanford Design Initiative](http://designinitiative.stanford.edu/)__  
-_Feb 2011_  
-_[Read more &raquo;](/portfolio/2011/02/18/design-initiative/)_ 
+- __[Stanford Design Initiative](http://designinitiative.stanford.edu/)__
+_Feb 2011_
+_[Read more &raquo;](/portfolio/2011/02/18/design-initiative/)_
 
 
 ---

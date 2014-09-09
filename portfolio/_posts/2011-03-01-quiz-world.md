@@ -2,7 +2,6 @@
 cid: quiz-world
 layout: portfolio-item
 title: Quiz World
-category: projects
 date-start: 2011-03-01
 num-images: 0
 num-images-custom: 13
@@ -13,7 +12,7 @@ num-images-custom: 13
 For a class project, I worked on a team of three to create a quiz website. The
 objective was to create a website where people can take quizzes. They can also
 compare their quiz scores to friends, challenge friends to beat their score, or
-write and edit quizzes that other people can take. 
+write and edit quizzes that other people can take.
 
 *   Designed the visual and interactive frontend with feedback from my teammates
 *   Made the site more interactive using jQuery and AJAX
@@ -23,9 +22,9 @@ write and edit quizzes that other people can take.
 
 ### TA Comments
 
-"There was a 20% bonus for the professional quality, design, and thoughtfulness... 
-Wow. This is the best quiz project I've ever seen. Lots of attention to detail. 
-You're all ridiculous. I hope you know that." 
+"There was a 20% bonus for the professional quality, design, and thoughtfulness...
+Wow. This is the best quiz project I've ever seen. Lots of attention to detail.
+You're all ridiculous. I hope you know that."
 
 ### Team
 
@@ -37,7 +36,7 @@ Sophia Westwood, Joe Gasperetti, Brie Bunge
 {% endfor %}
 
 
-### Features implemented: 
+### Features implemented:
 *   Questions that support multiple answer possibilities. It is possible for a
     quiz creator to specify a number of possible correct responses for fill in
     the blank, question response, and picture response questions
@@ -62,7 +61,7 @@ Sophia Westwood, Joe Gasperetti, Brie Bunge
 *   Quiz results show a comparison of the user's past performances on the quiz.
 *   Quiz results also show individual feedback on the incorrect questions. The
     user's answers are included in uneditable fields for reference, and the
-    correct answers are listed underneath. 
+    correct answers are listed underneath.
 
     *   We have implemented a prettified custom error 404 page if an invalid
     URL is requested
@@ -77,13 +76,13 @@ Sophia Westwood, Joe Gasperetti, Brie Bunge
     possible answers dynamically.
     *   The quiz creation and editing pages validate the form using client-side
     processing, highlighting textboxes left blank and forcing the user to fill
-    all fields out. 
+    all fields out.
     *   The quiz creation and editing pages allow the removal of questions and
     answers
     *   We have added an administrative interface (link visibile to admins in
-        the header bar) at /admin.jsp that allows for: 
+        the header bar) at /admin.jsp that allows for:
 
-        *   Getting statistics about the site: 
+        *   Getting statistics about the site:
             *   Number of users
             *   Number of quizzes
             *   Number of times quizzes have been taken
@@ -98,7 +97,7 @@ Sophia Westwood, Joe Gasperetti, Brie Bunge
     *   We have changed the Database engine used by the MySql Server so that
     some of our tables can hold metadata about which which keys are foreign
     keys in other tables. This allows changes to one table to cascade to sub
-    tables. For example: 
+    tables. For example:
       *   If it is necessary to change a quiz's ID, with one query on the quiz
       table that change cascades to all other tables holding quizID as a
       foreign key
@@ -107,8 +106,8 @@ associated with that quiz. (Also in one simple query on the quizzes table)
     *   We implemented a history table for tracking quiz usage analytics
     displaying historical performance data
     *   We implemented the optional achievements extension. Users are informed
-    after making or taking quizzes whether they have earned a new achievement. 
-        *   Achievements are shown on the right side of the page. 
+    after making or taking quizzes whether they have earned a new achievement.
+        *   Achievements are shown on the right side of the page.
         *   Achievement that have not yet been earned are greyed out
     *   We implemented quiz editing so that owners of quizzes can edit the
     quizzes they've created. The owners can edit aspects of their quiz such as
@@ -119,7 +118,7 @@ associated with that quiz. (Also in one simple query on the quizzes table)
     *   The login and user creation forms are dynamically validated using AJAX.
     *   Quotation marks are handled gracefully when entered in quizzes and
     notes. We wrote our own code to safeguard user input and make the site much
-    more robust. 
+    more robust.
       *   Whenever possible we preferred to upadate pages asynchonously instead
       of refreshing.
       *   Our largest extension is the look and feel of the website. From CSS3

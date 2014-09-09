@@ -2,22 +2,23 @@
 layout: default
 ---
 
-<div class="post portfolio-item">
-  <h1 class="post-title">{{ page.title }}</h1>
+<div class="container">
+  <div class="post portfolio-item">
+    <h1 class="post-title">{{ page.title }}</h1>
 
-  <span class="post-date">
-    {{ page.date-start | date: "%m/%Y" }}
-    {% if page.date-end %} - {{ page.date-end | date: "%m/%Y" }}{% endif %}
-  </span>
-  
-  <p><img src="/public/assets/{{ page.cid }}/featured.png" /></p>
+    <span class="post-date">
+      {{ page.date-start | date: "%m/%Y" }}
+      {% if page.date-end %} - {{ page.date-end | date: "%m/%Y" }}{% endif %}
+    </span>
 
-  {{ content }}
+    <p><img src="/public/assets/{{ page.cid }}/featured.png" /></p>
 
-  <div class="images">
-    {% for i in (1..page.num-images) %}
-    <img src="/public/assets/{{ page.cid }}/{{ i }}.png"/>
-    {% endfor %}
+    {{ content }}
+
+    <div class="images">
+      {% for i in (1..page.num-images) %}
+      <img src="/public/assets/{{ page.cid }}/{{ i }}.png"/>
+      {% endfor %}
+    </div>
   </div>
 </div>
-
