@@ -43,36 +43,6 @@ layout: default
       <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       {% endif %}
 
-      <div class="related">
-        <h2>Related Posts</h2>
-        <ul class="related-posts">
-          {% for post in site.related_posts limit:3 %}
-            <li>
-              <h3>
-                {% if post.categories contains 'portfolio' %}
-                <a href="{{ post.url }}">
-                  <small><i class="fa fa-th-large"></i>&nbsp;</small>
-                  {{ post.title }}&nbsp;
-                  <small>{{ post.date | date_to_string }}</small>
-                </a>
-                {% elsif post.link %}
-                <a href="{{ post.link }}">
-                  <small><i class="fa fa-external-link"></i>&nbsp;</small>
-                  {{ post.title }}&nbsp;
-                  <small>{{ post.date | date_to_string }}</small>
-                </a>
-                {% else %}
-                <a href="{{ post.url }}">
-                  <small><i class="fa fa-comments-o"></i>&nbsp;</small>
-                  {{ post.title }}&nbsp;
-                  <small>{{ post.date | date_to_string }}</small>
-                </a>
-                {% endif %}
-              </h3>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
     </div>
   </div>
 </div>
