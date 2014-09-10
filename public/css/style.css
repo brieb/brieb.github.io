@@ -382,8 +382,7 @@ h6,
 }
 .page {
   padding: 40px 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
   max-width: 900px;
 }
 .page .page-title {
