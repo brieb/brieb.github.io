@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
   .cover {
     width: 100%;
     position: relative;
+    height: 650px;
 
     .background {
       position: absolute;
@@ -56,44 +57,24 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
       color: white;
 
       .header {
+        font-size: 80px;
         text-transform: uppercase;
         font-weight: bold;
         text-shadow: 2px 2px 1px #000;
       }
 
       .subheader {
+        font-size: 32px;
+        line-height: 40px;
         max-width: 700px;
         margin: auto;
         text-shadow: 1px 1px 1px #000;
       }
     }
 
-    // -- RESPONSIVE --
-    height: 500px;
-    .header {
-      font-size: 40px;
-    }
-    .subheader {
-      font-size: 22px;
-      line-height: 30px;
-    }
     .avatar {
-      margin: 10px 0 20px 0;
-      img { width: 140px; }
-    }
-    @media (min-width: 600px) {
-      height: 650px;
-      .header {
-        font-size: 100px;
-      }
-      .subheader {
-        font-size: 32px;
-        line-height: 40px;
-      }
-      .avatar {
-        margin: -20px 0 20px 0;
-        img { width: inherit; }
-      }
+      margin: -20px 0 20px 0;
+      img { width: inherit; }
     }
   }
 
@@ -378,6 +359,7 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
   padding: 40px 0;
   margin-top: 50px;
   margin-bottom: 50px;
+  max-width: 900px;
 
   .page-title {
     font-weight: bold;
@@ -447,6 +429,7 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
   padding: 40px;
   background-color: white;
   box-shadow: 0px 0px 2px #888;
+  max-width: 900px;
 
   .featured-image {
     display: block;
@@ -539,5 +522,80 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
     color: #eee;
     font-weight: bold;
     text-transform: uppercase;
+  }
+}
+
+@media all
+and (min-width : 0px)
+and (max-width : 568px) {
+  .home-page .cover {
+    height: 400px;
+    .content {
+      padding: 40px 0;
+
+      .header {
+        font-size: 40px;
+      }
+      .subheader {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .avatar {
+        margin: 10px 0 20px 0;
+        img { width: 120px; }
+      }
+    }
+  }
+
+  .home-page .recent .item {
+    flex-basis: 100%;
+  }
+
+  .post-featured-image .post-title {
+    font-size: 30px;
+  }
+
+  .post.blog-post, .post.portfolio-item {
+    padding: 15px;
+  }
+
+  .blog-post, .portfolio-item {
+    font-size: 17px;
+  }
+
+  .post.blog-post .post-title, .post.portfolio-item .post-title {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .portfolio-page .item {
+    padding: 10px;
+  }
+
+  .page.resume {
+    padding: 10px;
+  }
+
+  .blog-page .post-featured-image .post-title {
+    font-size: 26px;
+  }
+
+  .blog-page .post-date {
+    font-size: 14px;
+  }
+
+  .blog-page .post {
+    margin: 40px 0 10px 0;
+  }
+
+  .page {
+    margin-top: 12px;
+  }
+
+  .post.blog-post, .post.portfolio-item {
+    margin: 0 auto;
   }
 }

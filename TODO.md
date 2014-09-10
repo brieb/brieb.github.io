@@ -1,3 +1,4 @@
+- looks terrible on phone
 - refactor less
 - convert to jpg (much smaller files!)
 - fill out CS377W post
