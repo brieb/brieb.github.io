@@ -2,7 +2,6 @@ body {
   padding-top: 50px;
   font-size: 16px;
   background-color: #eee;
-  padding-bottom: 40px;
 }
 h1 {
   font-size: 36px;
@@ -258,19 +257,28 @@ h6,
   margin-right: 5px;
 }
 .blog .post {
+  display: block;
   position: relative;
   background-color: #fff;
-  margin: 30px 0;
+  transition: background-color 0.5s ease;
+  margin: 50px 0 100px 0;
   box-shadow: 0px 0px 2px #888;
+  color: #555;
 }
-.blog .post .featured-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+.blog .post:hover {
+  text-decoration: none;
+}
+.blog .post:hover .post-title {
+  text-decoration: underline;
+}
+.blog .post-featured-image {
+  height: 250px;
+}
+.blog .post-featured-image .post-title {
+  font-size: 40px;
 }
 .blog .content {
-  padding: 30px;
+  padding: 20px 30px;
 }
 .blog .pagination {
   width: 100%;
@@ -350,11 +358,18 @@ h6,
 }
 .page {
   padding: 40px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .page .page-title {
   font-weight: bold;
   margin: 50px 0;
   font-size: 56px;
+}
+.page.resume {
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 2px #888;
 }
 .page.resume img {
   display: block;
@@ -372,9 +387,20 @@ h6,
   }
 }
 .page.resume .page-title {
+  text-align: center;
   font-weight: bold;
-  margin: 50px 0;
+  margin-bottom: 50px;
   font-size: 56px;
+}
+.page.resume .page-title:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  background-color: #fdd200;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 .page.resume h1 {
   font-weight: bold;
@@ -390,6 +416,7 @@ h6,
 .post.portfolio-item {
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 50px;
   padding: 40px;
   background-color: white;
   box-shadow: 0px 0px 2px #888;
@@ -429,7 +456,8 @@ h6,
 .post.portfolio-item img {
   max-width: 100%;
 }
-.blog-post {
+.blog-post,
+.portfolio-item {
   font-weight: 200;
   font-size: 20px;
   line-height: 2;
@@ -453,7 +481,7 @@ h6,
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 .post-featured-image .overlay {
   position: absolute;
