@@ -9,10 +9,10 @@ cid: mobile-payments
 Web engineer at a "stealth" mobile payments startup.
 
 
-Designed and developed
-&nbsp;&nbsp; an internal website to aid the customer support team,
-&nbsp;&nbsp; a restaurant menu management interface,
-&nbsp;&nbsp; and the member website.
+Designed and developed  
+&nbsp;&nbsp; an internal website to aid the customer support team,  
+&nbsp;&nbsp; a restaurant menu management interface,  
+&nbsp;&nbsp; and the member website.  
 
 Emphasis on object-oriented JS and maintainable code.
 

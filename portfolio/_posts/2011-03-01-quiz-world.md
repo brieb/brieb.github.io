@@ -1,9 +1,8 @@
 ---
 cid: quiz-world
 layout: portfolio-item
-title: Quiz World
+title: Stanford CS108 - Quiz World
 num-images: 0
-num-images-custom: 13
 ---
 
 ### What?
@@ -30,7 +29,7 @@ You're all ridiculous. I hope you know that."
 Sophia Westwood, Joe Gasperetti, Brie Bunge
 
 
-{% for i in (1..page.num-images-custom) %}
+{% for i in (1..13) %}
  ![](/public/assets/{{ page.cid }}/{{ i }}.png)
 {% endfor %}
 

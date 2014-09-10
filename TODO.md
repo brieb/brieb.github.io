@@ -1,1 +1,2 @@
 - refactor less
+- convert to jpg (much smaller files!)
