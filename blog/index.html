@@ -20,7 +20,7 @@ title: Blog
         <div class="content">
           <span class="post-date">
             <i class="fa fa-th-large"></i>
-            {{ post.date-start | date: "%m/%y" }}
+            {{ post.date | date: "%m/%y" }}
             {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
           </span>
         </div>

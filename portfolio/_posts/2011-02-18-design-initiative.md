@@ -2,7 +2,6 @@
 cid: design-initiative
 layout: portfolio-item
 title: Stanford Design Initiative
-date-start: 2011-02-18
 num-images: 15
 ---
 

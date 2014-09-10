@@ -2,7 +2,6 @@
 cid: quiz-world
 layout: portfolio-item
 title: Quiz World
-date-start: 2011-03-01
 num-images: 0
 num-images-custom: 13
 ---

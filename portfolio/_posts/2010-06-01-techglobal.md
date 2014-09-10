@@ -2,7 +2,6 @@
 cid: techglobal
 layout: portfolio-item
 title: TechGlobal Alliance Website
-date-start: 2010-06-01
 num-images: 4
 ---
 
