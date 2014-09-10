@@ -1,2 +1,4 @@
 - refactor less
 - convert to jpg (much smaller files!)
+- fill out CS377W post
+- add palantir to work experience
