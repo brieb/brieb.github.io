@@ -1,3 +1,20 @@
+// --- MIXINS ---
+
+.display-flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-flow {
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+// -- STYLES --
+
 body {
   padding-top: 50px;
   font-size: 16px;
@@ -85,8 +102,8 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
     .inner {
       max-width: 1200px;
       margin: auto;
-      display: flex;
-      flex-flow: row wrap;
+      .display-flex();
+      .flex-flow();
       justify-content: center;
     }
 
@@ -172,8 +189,8 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
     }
 
     .posts {
-      display: flex;
-      flex-flow: row wrap;
+      .display-flex();
+      .flex-flow();
       justify-content: center;
       padding-top: 20px;
     }
@@ -283,8 +300,8 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
 }
 
 .portfolio-page {
-  display: flex;
-  flex-flow: row wrap;
+  .display-flex();
+  .flex-flow();
   justify-content: center;
   margin-top: 10px;
 
@@ -507,7 +524,7 @@ h1,h2,h3,h4,h5,h6,.header,.subheader,.date {
   }
 
   .post-title-container {
-    display: flex;
+    .display-flex();
     align-items: center;
     justify-content: center;
     position: absolute;
