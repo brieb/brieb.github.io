@@ -5,15 +5,19 @@ title: Portfolio
 
 <div class="portfolio-page">
     {% for post in site.categories.portfolio %}
-    <a href="{{ post.url }}" class="item" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);">
-      <span class="content">
-        <h1 class="title">{{ post.title }}</h1>
+    <div class="item">
+      <a href="{{ post.url }}">
+        <span class="featured-image" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);"></span>
 
-        <span class="date">
-          {{ post.date-start | date: "%m/%y" }}
-          {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
+        <span class="content">
+          <h1 class="title">{{ post.title }}</h1>
+
+          <span class="date">
+            {{ post.date-start | date: "%m/%y" }}
+            {% if post.date-end %} - {{ post.date-end | date: "%m/%y" }}{% endif %}
+          </span>
         </span>
-      </span>
-    </a>
+      </a>
+    </div>
     {% endfor %}
 </div>

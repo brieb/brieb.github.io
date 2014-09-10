@@ -8,17 +8,14 @@ layout: default
     <div class="overlay"></div>
     <div class="background"></div>
     <div class="content">
-      <div class="header">Brie Bunge</div>
+      <div class="header">{{ site.title }}</div>
       <div class="avatar"><img src="/public/img/avatar.png"></div>
-      <div class="subheader">
-        Objective: Design and develop experiences that bring happiness
-        to people's lives
-      </div>
+      <div class="subheader">{{ site.description }}</div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="links">
+  <div class="links">
+    <div class="inner">
       <a class="link" href="/blog">
         <i class="fa fa-pencil"></i>
         <h1>Blog</h1>
@@ -36,44 +33,51 @@ layout: default
     </div>
   </div>
 
-  <div class="content-container">
-    <div class="container">
-      <div class="recent blog">
-        <h2 class="subheader">&mdash; Recent Posts &mdash;</h2>
-        {% assign cnt = '' %}
-        {% for post in site.posts %}
+  <div class="recent portfolio">
+    <div class="content">
+      <h2 class="subheader">Recent Projects</h2>
+      <div class="posts">
+      {% assign cnt = '' %}
+      {% for post in site.posts %}
           {% if post.title != null %}
-            {% if post.categories contains 'portfolio' %}{% else %}
-              <a href="{{ post.url }}" class="item" {% if post.featured-image %}style="background-image: url(/public/assets/featured-image/{{ post.featured-image }});"{% endif %}>
+            {% if post.categories contains 'portfolio' %}
+              <a href="{{ post.url }}" class="item">
+                <span class="featured-image" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);"></span>
                 <h3 class="post-title">{{ post.title }}</h3>
               </a>
 
               {% capture cnt %}{{ cnt }}*{% endcapture %}
-              {% if cnt.size >= 5 %}
+              {% if cnt.size >= 4 %}
                 {% break %}
               {% endif %}
             {% endif %}
           {% endif %}
-        {% endfor %}
+      {% endfor %}
       </div>
+    </div>
+  </div>
 
-      <div class="recent portfolio">
-        <h2 class="subheader">&mdash; Recent Projects &mdash;</h2>
-        {% assign cnt = '' %}
-        {% for post in site.posts %}
-            {% if post.title != null %}
-              {% if post.categories contains 'portfolio' %}
-                <a href="{{ post.url }}" class="item" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);">
-                  <h3 class="post-title">{{ post.title }}</h3>
-                </a>
-
-                {% capture cnt %}{{ cnt }}*{% endcapture %}
-                {% if cnt.size >= 5 %}
-                  {% break %}
-                {% endif %}
+  <div class="recent blog">
+    <div class="content">
+      <h2 class="subheader">Recent Posts</h2>
+      <div class="posts">
+      {% assign cnt = '' %}
+      {% for post in site.posts %}
+        {% if post.title != null %}
+          {% if post.categories contains 'portfolio' %}{% else %}
+            <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}" class="item">
+              {% if post.featured-image %}
+              <span class="featured-image" style="background-image: url(/public/assets/featured-image/{{ post.featured-image }});"></span>
               {% endif %}
+              <h3 class="post-title">{{ post.title }}</h3>
+            </a>
+            {% capture cnt %}{{ cnt }}*{% endcapture %}
+            {% if cnt.size >= 4 %}
+              {% break %}
             {% endif %}
-        {% endfor %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
       </div>
     </div>
   </div>
