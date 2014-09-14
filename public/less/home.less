@@ -1,0 +1,206 @@
+.home-page {
+  min-height: 100%;
+
+  .cover {
+    width: 100%;
+    position: relative;
+    height: 450px;
+
+    .background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .overlay {
+      background-image: url("/public/img/cover.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 80px 0;
+      text-align: center;
+      color: white;
+
+      .header {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 2px 2px 1px black;
+      }
+
+      .subheader {
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 700px;
+        margin: auto;
+        text-shadow: 1px 1px 1px black;
+        padding: 0 20px;
+      }
+    }
+
+    .avatar {
+      margin: 10px 0 20px 0;
+      img { width: 140px; }
+    }
+  }
+
+  .links {
+    padding: 40px 0;
+    background-color: white;
+    text-align: center;
+
+    .inner {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .link {
+      width: 33%;
+      min-width: 250px;
+      display: inline-block;
+      text-align: center;
+      margin: 20px auto;
+
+      h1 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: @gray;
+      }
+
+      &:hover {
+        text-decoration: none;
+        h1 { color: @brand-primary; }
+        i {
+          color: white;
+          background: @brand-primary;
+        }
+      }
+
+      i {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        font-size: 75px;
+        color: @brand-primary;
+        line-height: 130px;
+        text-align: center;
+        background: white;
+        border: 10px solid @brand-primary;
+        &.portfolio { line-height: 140px; }
+      }
+    }
+  }
+
+  .recent.portfolio {
+    background-color: @brand-primary;
+    .subheader {
+      color: #ffffff;
+    }
+  }
+
+  .recent.blog {
+    background-color: #EFEFEF;
+    .subheader {
+      color: @gray;
+    }
+  }
+
+  .recent {
+    .content {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 80px 0;
+    }
+
+    .subheader {
+      margin-bottom: 5px;
+      text-align: center;
+      letter-spacing: normal;
+      display: table;
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 1.3em;
+
+      &:after {
+        content: "";
+        width: 62%;
+        display: block;
+        height: 2px;
+        background: @yellow;
+        margin: auto;
+        margin-top: 4px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .posts {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .item {
+      width: 32%;
+      min-width: 250px;
+      display: inline-block;
+      background-color: #fff;
+      margin: 10px auto;
+      text-align: center;
+
+
+      .featured-image {
+        display: block;
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+      }
+
+      .post-title {
+        padding: 0;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: @gray;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 2px;
+          background-color: @yellow;
+          margin: auto;
+          margin-top: 7px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        background-color: #fbf6d6;
+      }
+    }
+  }
+}
