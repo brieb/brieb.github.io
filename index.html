@@ -1,85 +1,106 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="favicon.ico">
 
-<div class="home-page">
+  <title>Brie Bunge</title>
 
-  <div class="cover">
-    <div class="overlay"></div>
-    <div class="background"></div>
+  <link href="//fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Shade" rel="stylesheet">
+  <link href="reset.css" rel="stylesheet">
+
+  <style>
+  .landing-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .content {
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 22px;
+    color: #00FFFF;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin: 0 3px;
+  }
+
+  a:hover {
+    color: #00FFFF;
+  }
+  </style>
+
+  <script src="//use.fontawesome.com/f504f8ca73.js"></script>
+</head>
+
+<body>
+  <div class="landing-page">
     <div class="content">
-      <div class="header">{{ site.title }}</div>
-      <div class="avatar"><img src="/public/img/avatar.png"></div>
-      <div class="subheader">{{ site.description }}</div>
+      <h1>Brie Bunge</h1>
+      <h2>Frontend Software Engineer</h2>
+      <p>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/bbunge/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a title="GitHub" href="https://github.com/brieb">
+          <i class="fa fa-github-alt" aria-hidden="true"></i>
+        </a>
+        <a title="Twitter" href="https://twitter.com/briebunge">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a title="Email" href="mailto:brie@briebunge.com">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+      </p>
     </div>
   </div>
 
-  <div class="links">
-    <div class="inner">
-      <a class="link" href="/blog">
-        <i class="fa fa-pencil"></i>
-        <h1>Blog</h1>
-      </a>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      <a class="link" href="/portfolio">
-        <i class="portfolio fa fa-th-large"></i>
-        <h1>Portfolio</h1>
-      </a>
-
-      <a class="link" href="/resume">
-        <i class="fa fa-road"></i>
-        <h1>Résumé</h1>
-      </a>
-    </div>
-  </div>
-
-  <div class="recent portfolio">
-    <div class="content">
-      <h2 class="subheader">Recent Projects</h2>
-      <div class="posts">
-      {% assign cnt = '' %}
-      {% for post in site.posts %}
-          {% if post.title != null %}
-            {% if post.categories contains 'portfolio' %}
-              <a href="{{ post.url }}" class="item">
-                <span class="featured-image" style="background-image: url(/public/assets/{{ post.cid }}/featured.png);"></span>
-                <h3 class="post-title">{{ post.title }}</h3>
-              </a>
-
-              {% capture cnt %}{{ cnt }}*{% endcapture %}
-              {% if cnt.size >= 3 %}
-                {% break %}
-              {% endif %}
-            {% endif %}
-          {% endif %}
-      {% endfor %}
-      </div>
-    </div>
-  </div>
-
-  <div class="recent blog">
-    <div class="content">
-      <h2 class="subheader">Recent Posts</h2>
-      <div class="posts">
-      {% assign cnt = '' %}
-      {% for post in site.posts %}
-        {% if post.title != null %}
-          {% if post.categories contains 'portfolio' %}{% else %}
-            <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}" class="item">
-              {% if post.featured-image %}
-              <span class="featured-image" style="background-image: url(/public/assets/featured-image/{{ post.featured-image }});"></span>
-              {% endif %}
-              <h3 class="post-title">{{ post.title }}</h3>
-            </a>
-            {% capture cnt %}{{ cnt }}*{% endcapture %}
-            {% if cnt.size >= 3 %}
-              {% break %}
-            {% endif %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      </div>
-    </div>
-  </div>
-
-</div>
+  ga('create', 'UA-33889709-1', 'github.com');
+  ga('send', 'pageview');
+  </script>
+</body>
+</html>
